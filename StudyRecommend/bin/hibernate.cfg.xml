@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-configuration PUBLIC  
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>
+<session-factory>
+	<!-- 连接数据库信息 -->
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="connection.url">
+		jdbc:mysql://localhost:3306/studyrecommend
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">19921127</property>
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hbm2ddl.auto"></property>
+	<mapping resource="myce/casia/db/Knowledge.hbm.xml" />
+	<mapping resource="myce/casia/db/KnowledgeRelation.hbm.xml" />
+	<mapping resource="myce/casia/db/ExamationAndKnowledge.hbm.xml" />
+</session-factory>
+</hibernate-configuration>  

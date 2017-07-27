@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="myce.casia.db.Knowledge"> <!-- 实体类完整路径，会在关系模型中创建一张表，
+叫User,也可以用table重命名，如 table="t_user" -->
+		<id name="id"><!--标识主键,会在表里建主键id，也可以重命名 column="user_id"  -->
+			<generator class="identity"/><!--主键生成策略，generator为生成器，uuid为生成
+不重复的32位字符串  -->
+		</id>
+		<property name="name"/><!--其它属性，对应字段  -->
+	
+	</class>
+
+</hibernate-mapping>
